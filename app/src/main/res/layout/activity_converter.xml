@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|center_horizontal"
+    tools:context=".Converter">
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:hint="Type dollar or taka to convert"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+    <RadioButton
+        android:id="@+id/dollar"
+        android:onClick="Dollar"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="20dp"
+        android:text="Dollar"
+        android:textColor="#000"
+        />
+
+    <RadioButton
+        android:id="@+id/taka"
+        android:onClick="Taka"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/dollar"
+        android:layout_marginTop="20dp"
+        android:text="Taka"
+        android:textColor="#000"
+        />
+
+    <Button
+        android:onClick="Conert"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/taka"
+        android:layout_marginTop="40dp"
+        android:text="Convert"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="50dp"
+        />
+
+</RelativeLayout>
